@@ -19,7 +19,7 @@ run wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add - && \
 # enable shell server on all network interfaces
 
 add launch.sh /
-add ./graphify-1.0.0-jar-with-dependencies.jar /var/lib/neo4j/plugins
+COPY plugins /var/lib/neo4j/plugins
 
 run chmod +x /launch.sh && \
     apt-get clean && \
