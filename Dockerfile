@@ -1,11 +1,11 @@
 ## Neo4J dependency: java
 ## get java from official repo
-from java:latest
-#maintainer Tiago Pires, tandrepires@gmail.com
+from java:8
+maintainer Tiago Pires, tandrepires@gmail.com
 
 ## install neo4j according to http://www.neo4j.org/download/linux
 # Import neo4j signing key
-java:oracle-java8# Create an apt sources.list file
+# Create an apt sources.list file
 # Find out about the files in neo4j repo ; install neo4j community edition
 
 run wget -O - http://debian.neo4j.org/neotechnology.gpg.key | apt-key add - && \
