@@ -13,7 +13,7 @@ if [ "$limit" -lt 65536 ]; then
     ulimit -n 65536;
 fi
 
-echo "<code>org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.nlp.ext=/service</code>" >> /var/lib/neo4j/conf/neo4j.properties
+echo "org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.nlp.ext=/service" >> /var/lib/neo4j/conf/neo4j.properties
     
 .$NEO4J_HOME/bin/neo4j console
 
